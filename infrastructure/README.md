@@ -1,4 +1,4 @@
-# infrastructure/ — AWS Setup Scripts
+# infrastructure/ AWS Setup Scripts
 
 This folder contains scripts to provision and manage
 the AWS infrastructure used by the Fraud Detection Platform.
@@ -39,7 +39,7 @@ the AWS infrastructure used by the Fraud Detection Platform.
 
 ## Quick Start
 
-### Step 1 — Prerequisites
+### Step 1: Prerequisites
 ```bash
 # Install AWS CLI
 pip install awscli
@@ -52,7 +52,7 @@ aws configure
 # Default output format : json
 ```
 
-### Step 2 — Create S3 + IAM
+### Step 2: Create S3 + IAM
 ```bash
 bash setup_aws.sh
 ```
@@ -82,7 +82,7 @@ Step 4: Kinesis permissions for SageMaker...
 =============================================
 ```
 
-### Step 3 — Check infrastructure status
+### Step 3: Check infrastructure status
 ```bash
 python setup_sagemaker.py
 ```
@@ -105,7 +105,7 @@ Expected output:
 =======================================================
 ```
 
-### Step 4 — Create Kinesis stream (when needed)
+### Step 4: Create Kinesis stream (when needed)
 ```python
 from setup_sagemaker import create_kinesis_stream
 
